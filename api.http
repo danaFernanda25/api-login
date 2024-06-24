@@ -1,0 +1,39 @@
+GET http://localhost:3000/public
+###
+GET http://localhost:3000/publico
+
+###
+POST http://localhost:3000/autenticado
+Content-Type: application/json
+
+{
+    "username" : "bobjohnson",
+    "password" : "password789"
+}
+
+###
+PATCH http://localhost:3000/proveedores/10
+Content-Type: application/json
+
+{
+            "id": 10,
+            "nombre": "Proveedor Actualizado",
+            "correo": "proveedora@example.com",
+            "direccion": "Calle Principal #123",
+            "contacto": "+1234567890",
+            "estado": "Activo"
+}
+
+###
+POST http://localhost:3000/actividades
+Content-Type: application/json
+
+{
+    "fecha": "2024-06-04",
+    "id_lote": 1,
+    "id_usuario": 1,
+    "agua": 100,
+    "huevos": 50,
+    "alimento": 30,
+    "id_vacuna": 2
+}

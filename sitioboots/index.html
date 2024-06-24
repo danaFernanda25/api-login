@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Inicio Contenedor principal -->
+<div class="fondo d-flex align-items-center">
+    <div class="container-fluid" id="inicio">
+        <div class="row cabecera">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <!-- inicio barra de navegacion -->
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark bg-opacity-25 fixed-top">
+                    <div class="container">
+                        <a class="" href="#"><img src="assets/img/vector.png" class="tamanologos p-1"></a>
+                        <button class="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link textolabel fs-5" aria-current="page" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link textolabel fs-5" href="#" data-bs-toggle="offcanvas" data-bs-target="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle textolabel fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu bg-info bg-opacity-50" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item textolabel fs-5" href="#frontend">Frontend</a></li>
+                                <li><a class="dropdown-item textolabel fs-5" href="#backend">Backend</a></li>
+                                <li><a class="dropdown-item textolabel fs-5" href="#">SEO</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link textolabel fs-5" type="button" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+            <!-- fin barra de navegacion -->
+            </div>
+        </div>
+        
+        <div class="row cuerpo d-flex align-items-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 text-center colortitulo ">
+                <p class="display-3 tituloweb">Ejemplo Bootstrap 5</p>
+                <p class="parrafoweb p-4 ocultar">Este es un ejemplo de aplicación de Bootstrap 5, en el diseño de una aplicación Web de unica pantalla, como Landingpage</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-3 col-xl-3 ">
+            <!-- inicio opcion modal login -->
+                <div class="d-flex justify-content-center">
+                    <p>
+                        <button class="btn btn-success fs-5" type="button" data-bs-toggle="modal" data-bs-target="#login" aria-expanded="false" aria-controls="collapseExample">
+                            Inicio de Sesión
+                        </button>
+                    </p>
+                </div>
+            <!-- fin opcion modal login -->
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center ">
+            <!-- inicio opcion modal registro -->
+            <p>
+                <button class="btn btn-warning fs-5" data-bs-toggle="modal" data-bs-target="#registro" aria-expanded="false" aria-controls="collapseExample">
+                    Registro
+                </button>
+                </p>
+            <!-- fin opcion modal registro -->
+            </div>
+        </div>
+        <div class="row pie">
+            <div class="col d-flex justify-content-center align-items-center">
+                    <a href="#">
+                        <img src="assets/svg/facebook_gris.svg" class="tamanologos mx-3">
+                    </a>
+                    <a href="#">
+                        <img src="assets/svg/instragram_gris.svg" class="tamanologos mx-3">
+                    </a>
+                    <a href="#">
+                        <img src="assets/svg/twitter_gris.svg" class="tamanologos mx-3">
+                    </a>
+                    <a href="#">
+                        <img src="assets/svg/whatsapp_gris.svg" class="tamanologos mx-3">
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin Contenedor principal -->
+
+<!-- Inicio Contenedor Nosotros -->
+
+<div class="offcanvas offcanvas-end bg-dark bg-opacity-50 w-75 h-100 nosotros" id="nosotros">
+    <div class="offcanvas-header" data-bs-theme="light">
+        <h5 class="offcanvas-title tituloweb fs-2">Nosotros</h5>
+        <button class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="d-flex align-items-center">
+        <div class="card-deck">
+            <div class="row justify-content-evenly">
+                <div class="card col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 mb-5" >
+                    <img src="assets/img/card1.jpg" class="card-img-top mt-2 ocultar" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title textolabel">Comprometidos con el planeta</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Mas información...</a>
+                    </div>
+                </div>
+                <div class="card col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 mb-5" >
+                    <img src="assets/img/card1.png" class="card-img-top mt-2 ocultar" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title textolabel">Tecnologías e infraestructura de punta</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Mostrar Opciones</a>
+                    </div>
+                </div>
+                <div class="card col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 mb-5">
+                    <img src="assets/img/card3.jpg" class="card-img-top mt-2 ocultar" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title textolabel">Disponibilidad y Confiabilidad</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Cargar Modal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin Contenedor Nosotros -->
+
+<!-- inicio Contenedor Servicios Frontend -->
+    <!-- inicio carrusel -->
+<div id="frontend" class="bg-secondary">
+    <div id="carouselFrontend" class="carruselfrontend carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFrontend" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFrontend" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFrontend" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="8000">
+                <div class="container ">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/svg/html5.svg" class="carruselimagen">
+                    </div>
+                    <div class="contenidoscarrusel">
+                        <p class="textolabel fs-4">
+                            <span>HTML5</span> se presenta como un lenguaje avanzado que concentra una gran flexibilidad para estructurar y presentar páginas Web. <span>HTML5</span> muestra un gran progreso que permite a los diseñadores Web, aventurarse en la creación de sitios de manera inigualable..
+                        </p>
+                        <p class="textolabel fs-4 ocultar">
+                            Incluye modelos de procesamiento detallados para apoyar a las implementaciones más interoperables; se extiende, mejora y racionaliza el margen de beneficio disponible para documentos e introduce un margen de beneficio y las interfaces de programación de aplicaciones (API) para aplicaciones web complejas. Por las mismas razones, <span>HTML5</span> también es un candidato potencial para aplicaciones móviles multiplataforma. Muchas de las características de <span>HTML5</span> se han diseñado con dispositivos de baja potencia, tales como teléfonos inteligentes y tabletas.
+                        </p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/svg/css3.svg" class="carruselimagen">
+                    </div>
+                    <div class="contenidoscarrusel">
+                        <p class="textolabel fs-4">
+                            El <span>CSS</span> podría definirse como un tipo de lenguaje que permite definir y crear la presentación visual de un documento ya estructurado y escrito en un lenguaje de marcado como puede ser HTML. Es decir, permite generar el diseño visual de páginas web e interfaces de usuario.
+                        </p>
+                        <p class="textolabel fs-4 ocultar">
+                            <span>CSS</span> es necesario en el diseño web y la programación frontend para crear experiencias web dinámicas y atractivas. Por ejemplo, <span>CSS</span> ofrece herramientas para aplicar transformaciones y animaciones a elementos. Las transformaciones permiten rotar, escalar y mover elementos en la página. Las animaciones, por otro lado, pueden hacer que los elementos cambien gradualmente de un estado a otro, agregando interactividad y vida a la página.
+                        </p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/svg/javascript.svg" class="carruselimagen">
+                    </div>
+                    <div class="contenidoscarrusel">
+                    <p class="textolabel fs-4">
+                        <span>JavaScript</span> es un lenguaje de alto nivel, dinámico e interpretado. Se define como orientado a objetos, basado en prototipos, imperativo y débilmente tipado. Junto al HTML y a CSS, es una de las tres tecnologías esenciales en la producción mundial webs: la mayoría de los sitios web la emplean y es compatible con todos los navegadores modernos sin necesidad de plug-ins.
+                    </p>
+                    <p class="textolabel fs-4 ocultar">
+                        <span>JavaScript</span> también se utiliza en entornos que no se basan en web, tales como documentos PDF, navegadores específicos del sitio y widgets de escritorio. Máquinas virtuales de <span>JavaScript</span> (VMs) mucho más nuevas y rápidas, así como plataformas construidas sobre este lenguaje, han aumentado la popularidad de <span>JavaScript</span> para aplicaciones web.
+                    </p>
+                    </div>
+                    <div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrontend" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFrontend" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!-- fin carrusel -->
+</div>
+<!-- fin Contenedor Servicios Frontend -->
+
+<!-- inicio Contenedor Servicios Backend -->
+<div id="backend" class="vh-100 d-flex align-items-center">
+        <div class="card-deck contenidobackend">
+            <div class="row justify-content-evenly">
+                <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+                    <img src="assets/img/card7.jpeg" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title textolabel">Desarrollo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Mas información...</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5" >
+                    <img src="assets/img/card5.jpg" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title textolabel">Actualizaciones</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Mostrar Opciones</a>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mb-5">
+                    <img src="assets/img/card6.jpg" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title textolabel">Alojamiento</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Cargar Modal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- inicio Contenedor Servicios Backend -->
+
+<!-- inicio Modal Login-->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-info bg-opacity-25">
+        <div class="modal-header">
+            <h5 class="modal-title textolabel" id="exampleModalLabel">Iniciar Sesion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"> 
+            <!-- inicio formulario login -->
+                    <form>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputEmail1" class="form-label textolabel">Nombre de usuario</label> -->
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre de Usuario">
+                        <div id="emailHelp" class="form-text textolabel">Ingrese un usuario registrado.</div>
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputPassword1" class="form-label textolabel">Contraseña</label> -->
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Login</button>
+                    </form>
+            <!-- fin formulario login -->
+                </div>
+                </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<!-- fin Modal login-->
+
+<!-- inicio Modal Registro-->
+<div class="modal fade" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-info bg-opacity-25">
+    <div class="modal-header">
+        <h5 class="modal-title textolabel" id="exampleModalLabel">Formulario Registro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <!-- inicio formulario registro -->
+        <form>
+            <div class="mb-3">
+                <!-- <label for="exampleInputEmail1" class="form-label textolabel">Nombre y Apellidos</label> -->
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombres y Apellidos">
+            </div>
+            <div class="mb-3">
+                <!-- <label for="exampleInputPassword1" class="form-label textolabel">Documento</label> -->
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Documento">
+            </div>
+            <div class="mb-3">
+                <!-- <label for="exampleInputPassword1" class="form-label textolabel">Nombre de usuario</label> -->
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre de usuario">
+            </div>
+            <div class="mb-3">
+                <!-- <label for="exampleInputPassword1" class="form-label textolabel">Contraseña</label> -->
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                <div id="emailHelp" class="form-text textolabel">minimo 6 caracteres, 1 caracter especial.</div>
+            </div>
+            <div class="mb-3">
+                <!-- <label for="exampleInputPassword1" class="form-label textolabel">Correo Electrónico</label> -->
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Correo Electrónico">
+            </div>
+            <div class="mb-3">
+                <!-- <label for="exampleInputPassword1" class="form-label textolabel">Teléfono de contacto</label> -->
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Teléfono de contacto">
+            </div>
+            <button type="submit" class="btn btn-warning">Registrarse</button>
+        </form>
+        <!-- fin formulario registro -->
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+    </div>
+</div>
+</div>
+<!-- fin Modal Registro-->
+
+<!-- inicio Modal contacto-->
+<div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-info bg-opacity-25">
+        <div class="modal-header">
+            <h5 class="modal-title textolabel" id="exampleModalLabel">Formulario de Contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12">
+                <!-- inicio formulario contacto -->
+                <form>
+                    <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputEmail1" class="form-label textolabel">Nombre y Apellidos</label> -->
+                            <input type="text" class="form-control mb-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombres y Apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputPassword1" class="form-label textolabel">Correo de contacto</label> -->
+                            <input type="text" class="form-control mb-4" id="exampleInputPassword1" placeholder="Correo de contacto">
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputPassword1" class="form-label textolabel">Telefono de contacto</label> -->
+                            <input type="text" class="form-control mb-4" id="exampleInputPassword1" placeholder="Teléfono de contacto">
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputPassword1" class="form-label textolabel">dirección</label> -->
+                            <input type="text" class="form-control mb-4" id="exampleInputPassword1" placeholder="Dirección">
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputPassword1" class="form-label textolabel">Organización</label> -->
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Organización">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <select class="form-select mb-4" aria-label="Default select example">
+                            <option selected><label class="textoselect">Tipo de Comentario</label></option>
+                            <option value="1">Solicitud de servicio</option>
+                            <option value="2">Solicitud de contacto</option>
+                            <option value="3">Queja y/o Reclamo</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label textolabel">Comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="">
+                            <button type="submit" class="btn btn-warning">Enviar Comentario</button>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+                <!-- fin formulario contacto -->
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- fin Modal contacto-->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
